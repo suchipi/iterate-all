@@ -1,0 +1,33 @@
+{
+  "name": "iterate-all",
+  "version": "1.0.0",
+  "description": "Converts an iterable, iterable of Promises, or async iterable into a Promise of an Array.",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "iterator",
+    "async",
+    "iterable",
+    "flat",
+    "convert",
+    "iterate",
+    "flatten",
+    "all",
+    "promise"
+  ],
+  "author": "Lily Scott <me@suchipi.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suchipi/iterate-all.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "typescript": "^4.5.5"
+  }
+}
