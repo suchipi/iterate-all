@@ -13,7 +13,7 @@ Into this:
 
 ## Usage
 
-```
+```js
 import {iterateAll} from "iterate-all";
 
 async function* someAsyncGenerator() {
