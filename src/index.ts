@@ -26,16 +26,15 @@ export async function iterateAll<T>(
   const iterator = iteratorFactory.call(iterable);
 
   const results: Array<T> = [];
-  let done = false;
 
-  while (!done) {
+  while (true) {
     let nextResult = iterator.next();
     if (isThenable(nextResult)) {
       nextResult = await nextResult;
     }
 
     if (nextResult.done) {
-      done = true;
+      break;
     } else {
       let value = nextResult.value;
       if (isThenable(value)) {
